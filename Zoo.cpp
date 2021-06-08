@@ -16,19 +16,19 @@ void Zoo::controlZoo(){
     int choice;
 
     do{
-        cout << "Ïðîãðàìà Çîîïàðê!" << endl;
-        cout << "Ìåíþ" << endl;
-        cout << "1. Íàãîäóâàòè òâàðèíó" << endl;
-        cout << "2. Äîäàòè òâàðèíó äî Çîîïàðêó" << endl;
-        cout << "3. Ïåðåâåçòè òâàðèíó â ³íøèé Çîîïàðê" << endl;
-        cout << "4. Ïîäèâèòèñü ³íôîðìàö³þ ïî Çîîïàðêó" << endl;
+        cout << "ÐŸÑ€Ð¾Ð³Ñ€Ð°Ð¼Ð° Ð—Ð¾Ð¾Ð¿Ð°Ñ€Ðº!" << endl;
+        cout << "ÐœÐµÐ½ÑŽ" << endl;
+        cout << "1. ÐÐ°Ð³Ð¾Ð´ÑƒÐ²Ð°Ñ‚Ð¸ Ñ‚Ð²Ð°Ñ€Ð¸Ð½Ñƒ" << endl;
+        cout << "2. Ð”Ð¾Ð´Ð°Ñ‚Ð¸ Ñ‚Ð²Ð°Ñ€Ð¸Ð½Ñƒ Ð´Ð¾ Ð—Ð¾Ð¾Ð¿Ð°Ñ€ÐºÑƒ" << endl;
+        cout << "3. ÐŸÐµÑ€ÐµÐ²ÐµÐ·Ñ‚Ð¸ Ñ‚Ð²Ð°Ñ€Ð¸Ð½Ñƒ Ð² Ñ–Ð½ÑˆÐ¸Ð¹ Ð—Ð¾Ð¾Ð¿Ð°Ñ€Ðº" << endl;
+        cout << "4. ÐŸÐ¾Ð´Ð¸Ð²Ð¸Ñ‚Ð¸ÑÑŒ Ñ–Ð½Ñ„Ð¾Ñ€Ð¼Ð°Ñ†Ñ–ÑŽ Ð¿Ð¾ Ð—Ð¾Ð¾Ð¿Ð°Ñ€ÐºÑƒ" << endl;
 
-        cout << "\nÇðîáiòü âàø âèáið: ";
+        cout << "\nÐ—Ñ€Ð¾Ð±iÑ‚ÑŒ Ð²Ð°Ñˆ Ð²Ð¸Ð±iÑ€: ";
         cin >> choice;
 
         switch(choice){
             case 1:
-                cout << "Ãîäóâàííÿ òâàðèíè!"  <<endl;
+                cout << "Ð“Ð¾Ð´ÑƒÐ²Ð°Ð½Ð½Ñ Ñ‚Ð²Ð°Ñ€Ð¸Ð½Ð¸!"  <<endl;
                 giveFood();
                 break;
             case 2:
@@ -44,7 +44,7 @@ void Zoo::controlZoo(){
                 showZooInfo();
                 break;
         }
-        cout << "Ùîá ïîâåðíóòèñü äî ìåíþ íàòèñíiòü áóäü-ÿêó êëàâiøó!" << endl;
+        cout << "Ð©Ð¾Ð± Ð¿Ð¾Ð²ÐµÑ€Ð½ÑƒÑ‚Ð¸ÑÑŒ Ð´Ð¾ Ð¼ÐµÐ½ÑŽ Ð½Ð°Ñ‚Ð¸ÑÐ½iÑ‚ÑŒ Ð±ÑƒÐ´ÑŒ-ÑÐºÑƒ ÐºÐ»Ð°Ð²iÑˆÑƒ!" << endl;
         system("pause");
         system("cls");
     }
@@ -56,30 +56,30 @@ void Zoo::giveFood(){
     int weight;
     int satiety_percent;
     string name_animale;
-    cout << "Ââåä³òü ïàðàìåòðè ¿æ³" << endl;
-    cout << "Âèä ¿æ³: ";
+    cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ Ð¿Ð°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ð¸ Ñ—Ð¶Ñ–" << endl;
+    cout << "Ð’Ð¸Ð´ Ñ—Ð¶Ñ–: ";
     cin >> type;
-    cout << "Âàãà ¿æ³: ";
+    cout << "Ð’Ð°Ð³Ð° Ñ—Ð¶Ñ–: ";
     cin >> weight;
-    cout << "Â³äñîòîê ñèòíîñò³(0-100): ";
+    cout << "Ð’Ñ–Ð´ÑÐ¾Ñ‚Ð¾Ðº ÑÐ¸Ñ‚Ð½Ð¾ÑÑ‚Ñ–(0-100): ";
     cin >> satiety_percent;
-    cout << "Ââåä³òü íàçâó òâàðèíè, ÿê³é ïðèçíà÷åíà ¿æà: " << endl;
+    cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ Ð½Ð°Ð·Ð²Ñƒ Ñ‚Ð²Ð°Ñ€Ð¸Ð½Ð¸, ÑÐºÑ–Ð¹ Ð¿Ñ€Ð¸Ð·Ð½Ð°Ñ‡ÐµÐ½Ð° Ñ—Ð¶Ð°: " << endl;
     cin >> name_animale;
 
     Food food = Food(type, weight, satiety_percent);
 
 
     for(int i = 0; i < animals.size(); i++){
-        //ïåð³îä ãîäóâàííÿ ìîëîêîì
+        //Ð¿ÐµÑ€Ñ–Ð¾Ð´ Ð³Ð¾Ð´ÑƒÐ²Ð°Ð½Ð½Ñ Ð¼Ð¾Ð»Ð¾ÐºÐ¾Ð¼
         /*if(animals[i].getType() == name_animale){
             if(typeid(animals[i]).name() == "Beast"){
                 if( animals[i].getPeriod_milk_eating() > animals[i].getAge()){
-                    cout << "Òâàðèíà ùå ãîäóºòüñÿ ìîëîêîì!";
+                    cout << "Ð¢Ð²Ð°Ñ€Ð¸Ð½Ð° Ñ‰Ðµ Ð³Ð¾Ð´ÑƒÑ”Ñ‚ÑŒÑÑ Ð¼Ð¾Ð»Ð¾ÐºÐ¾Ð¼!";
                 }
              }
             }*/
             animals[i].feeding(food);
-            cout << "Òâàðèíó: " << name_animale << " íàãîäîâàíî!" << endl;
+            cout << "Ð¢Ð²Ð°Ñ€Ð¸Ð½Ñƒ: " << name_animale << " Ð½Ð°Ð³Ð¾Ð´Ð¾Ð²Ð°Ð½Ð¾!" << endl;
             break;
         }
 
@@ -90,11 +90,11 @@ void Zoo::addAnimaleToZoo(){
     string type;
     int age;
     int fatness;
-    cout << "Ââåä³òü âèä òâàðèíè: ";
+    cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ Ð²Ð¸Ð´ Ñ‚Ð²Ð°Ñ€Ð¸Ð½Ð¸: ";
     cin >> type;
-    cout << "Ââåä³òü â³ê òâàðèíè: ";
+    cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ Ð²Ñ–Ðº Ñ‚Ð²Ð°Ñ€Ð¸Ð½Ð¸: ";
     cin >> age;
-    cout << "Ââåä³òü ð³âåíü íàêîðìëåíîñò³ òâàðèíè: ";
+    cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ Ñ€Ñ–Ð²ÐµÐ½ÑŒ Ð½Ð°ÐºÐ¾Ñ€Ð¼Ð»ÐµÐ½Ð¾ÑÑ‚Ñ– Ñ‚Ð²Ð°Ñ€Ð¸Ð½Ð¸: ";
     cin >> fatness;
 
     Animale animale = Animale(type, age, fatness);
@@ -104,12 +104,12 @@ void Zoo::addAnimaleToZoo(){
 }
 void Zoo::transportAnimale(){
     string s;
-    cout << "Ââåä³òü íàçâó òâàðèíè: ";
+    cout << "Ð’Ð²ÐµÐ´Ñ–Ñ‚ÑŒ Ð½Ð°Ð·Ð²Ñƒ Ñ‚Ð²Ð°Ñ€Ð¸Ð½Ð¸: ";
     cin >> s;
     for(int i = 0; i < animals.size(); i++){
         if(animals[i].getType() == s){
             animals.erase(animals.begin() + i);
-            cout << "Òâàðèíó òðàíñïîðòîâàíî äî ³íøîãî çîîïàðêó!" << endl;
+            cout << "Ð¢Ð²Ð°Ñ€Ð¸Ð½Ñƒ Ñ‚Ñ€Ð°Ð½ÑÐ¿Ð¾Ñ€Ñ‚Ð¾Ð²Ð°Ð½Ð¾ Ð´Ð¾ Ñ–Ð½ÑˆÐ¾Ð³Ð¾ Ð·Ð¾Ð¾Ð¿Ð°Ñ€ÐºÑƒ!" << endl;
             break;
         }
     }
@@ -119,3 +119,4 @@ void Zoo::showZooInfo(){
             animals[i].show();
     }
 }
+
