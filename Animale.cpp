@@ -30,7 +30,9 @@ int Animale::getAge(){return this->age;}
 int Animale::getFatness(){return this->fatness;}
 
 void Animale::show(){
-    cout << "Âèä òâàðèíè: " << this->type << endl;
-    cout << "Â³ê òâàðèíè: " << this->age << endl;
-    cout << "Ð³âåíü íàãîäîâàíîñò³: " << this->fatness << endl << endl;
+    cout << "Ð’Ð¸Ð´ Ñ‚Ð²Ð°Ñ€Ð¸Ð½Ð¸: " << this->type << endl;
+    cout << "Ð’Ñ–Ðº Ñ‚Ð²Ð°Ñ€Ð¸Ð½Ð¸: " << this->age << endl;
+    cout << "Ð Ñ–Ð²ÐµÐ½ÑŒ Ð½Ð°Ð³Ð¾Ð´Ð¾Ð²Ð°Ð½Ð¾ÑÑ‚Ñ–: " << this->fatness << endl << endl;
+}
+
 }
